@@ -28,6 +28,7 @@ useEffect(() => {
         `https://api.weatherapi.com/v1/current.json?key=7089467baf1548b69b644959230707&q=${position.coords.latitude},${position.coords.longitude}&aqi=no`
       );
       setData(response.data);
+      event.target.reset();       
     } catch (error) {
       console.log(error);
     }
